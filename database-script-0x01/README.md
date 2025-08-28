@@ -1,0 +1,1 @@
+I created a database 'database-scripts-0x01' by writing query and also create table for user, property, payment, booking, review, message with primary key, foreign key, data types and constraints to help in proper work flow of the database.
