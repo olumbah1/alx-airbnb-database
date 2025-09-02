@@ -38,3 +38,22 @@ FULL OUTER JOIN includes:
 All records from users (even if there's no matching booking),
 All records from bookings (even if there's no matching user).
 Where there's no match, the corresponding columns will return NULL.
+
+
+# Write a query to find all properties where the average rating is greater than 4.0 using a subquery.
+
+First, we go look at all the bookings.
+We find users who made more than 3 bookings — like building a list: [2,4, 6].
+Then we go to the user table and say: "Give me all users whose user_id is in that list."
+
+The subquery doesn’t care what’s happening in the outer query
+
+
+# Write a correlated subquery to find users who have made more than 3 bookings.
+You look at each user one by one:
+"OK, this is User 1 — how many bookings did they make?"
+Then "OK, now User 2 — how many bookings for them?"
+And so on…
+If a user has more than 3 bookings, you keep them.
+
+The subquery needs the outer query to work.
