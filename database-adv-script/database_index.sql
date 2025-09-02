@@ -39,7 +39,7 @@ ORDER BY created_at DESC;
 
 If you run:
 
-EXPLAIN SELECT *
+EXPLAIN ANALYZE SELECT *
 FROM booking
 WHERE user_id = 'abc-123'
 ORDER BY created_at DESC;
@@ -74,7 +74,7 @@ ORDER BY created_at DESC
 
 --Now run the same EXPLAIN again:
 
-EXPLAIN SELECT *
+EXPLAIN ANALYZE SELECT *
 FROM booking
 WHERE user_id = 'abc-123'
 ORDER BY created_at DESC;
