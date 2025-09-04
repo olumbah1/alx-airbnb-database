@@ -8,7 +8,9 @@ SELECT
 FROM booking b 
 INNER JOIN user u ON b.user_id =  u.user_id
 INNER JOIN property pr ON b.property_id = pr.property_id
-INNER JOIN payment pay ON b.booking_id = pay.booking_id;
+INNER JOIN payment pay ON b.booking_id = pay.booking_id
+WHERE b.status = 'confirmed'
+  AND pay.amount > 0;;
 
 
 -- Analyze the query’s performance using EXPLAIN and identify any inefficiencies.
