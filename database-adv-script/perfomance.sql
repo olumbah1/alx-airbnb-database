@@ -14,7 +14,7 @@ WHERE b.status = 'confirmed'
 
 
 -- Analyze the query’s performance using EXPLAIN and identify any inefficiencies.
-EXPLAIN SELECT
+EXPLAIN ANALYZE SELECT
      b.*,
      u.*,
      pr.*,
